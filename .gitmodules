@@ -37,3 +37,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-ruby-runner"]
+	path = bundle/vim-ruby-runner
+	url = https://github.com/henrik/vim-ruby-runner.git
