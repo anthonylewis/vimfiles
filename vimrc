@@ -1,3 +1,4 @@
+set nocompatible
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -5,6 +6,8 @@ call pathogen#helptags()
 set nocompatible
 
 set hidden
+
+set history=1000
 
 " Where am I?
 set ruler
@@ -57,11 +60,16 @@ endif
 map <F2> :NERDTreeToggle<CR>
 map <F3> :TagbarToggle<CR>
 
-" switch buffers
-noremap <tab> :bn<CR>
-noremap <S-tab> :bp<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>c :TagbarToggle<CR>
 
-"delete buffers
+" turn off highlights for current search
+nmap <leader>h :nohls<CR>
+
+" toggle current line highlight
+nmap <leader>l :set cursorline!<CR>
+
+" delete buffers
 nmap <leader>d :bd<CR>
 nmap <leader>D :bufdo bd<CR>
 
