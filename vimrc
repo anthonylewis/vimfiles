@@ -45,7 +45,6 @@ set directory=~/.vim/tmp
 
 " Plugin options
 let g:CSApprox_verbose_level=0
-let g:ctrlp_working_path_mode=0
 
 " GUI options
 if has("gui_running")
