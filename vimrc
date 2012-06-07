@@ -1,4 +1,3 @@
-set nocompatible
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -40,6 +39,10 @@ set wildmenu
 set background=dark
 colorscheme desert
 
+" Kill the pink on popup menus
+highlight Pmenu ctermbg=238 gui=bold
+highlight Pmenu gui=bold guibg=#CECECE guifg=#444444
+
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 
@@ -53,6 +56,30 @@ let g:CSApprox_verbose_level=0
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowReverse=1
 
+" Supertab setup - context with omnicomplete - too slow in our app.
+" let g:SuperTabDefaultCompletionType = "context"
+" let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+" let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+" let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+" let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
+
+" Ruby autocomplete - too slow in our app.
+" autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+" autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+" autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+" autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+" autocmd FileType ruby,eruby let g:rubycomplete_include_object = 1
+" autocmd FileType ruby,eruby let g:rubycomplete_include_objectspace = 1
+
+" Supertab setup - keyword completion
+let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
+
+" find completions in the current buffer and ctags
+set complete=.,t
+
+" rails.vim options
+let g:rails_ctags_arguments='--exclude=public --exclude=log --exclude=.git --exclude=tmp --exclude=vendor'
+
 " GUI options
 if has("gui_running")
   set gcr=a:blinkwait0,a:block-cursor
@@ -63,28 +90,49 @@ if has("gui_running")
 endif
 
 " Mappings
-map <F2> :NERDTreeToggle<CR>
-map <F3> :TagbarToggle<CR>
-map <F4> :CommandT<CR>
-map <F5> :CommandTBuffer<CR>
+" map <silent> <F2> :NERDTreeToggle<CR>
+" map <silent> <F3> :TagbarToggle<CR>
+" map <silent> <F4> :CommandT<CR>
+" map <silent> <F5> :CommandTBuffer<CR>
 
-nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>c :TagbarToggle<CR>
-nmap <leader>t :CommandT<CR>
-nmap <leader>b :CommandTBuffer<CR>
+nmap <silent> <leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>c :TagbarToggle<CR>
+nmap <silent> <leader>t :CommandT<CR>
+nmap <silent> <leader>b :CommandTBuffer<CR>
 
-" turn off highlights for current search
-nmap <leader>h :nohls<CR>
+" close the quickfix window
+nmap <silent> <leader>q :ccl<CR>
+
+" turn off highlight current search
+nmap <silent> <leader>h :nohls<CR>
 
 " toggle current line highlight
-nmap <leader>l :set cursorline!<CR>
+nmap <silent> <leader>l :set cursorline!<CR>
 
 " delete buffers
-nmap <leader>d :bd<CR>
-nmap <leader>D :bufdo bd<CR>
+nmap <silent> <leader>d :bd<CR>
+nmap <silent> <leader>D :bufdo bd<CR>
 
 " ruby runner
 let g:RubyRunner_open_below = 1
 let g:RubyRunner_window_size = 10
-nmap <leader>r :RunRuby<CR> <C-w>p
+nmap <silent> <leader>r :RunRuby<CR> <C-w>p
+
+" colorcolumn is Vim 7.3 only
+if exists("&colorcolumn")
+  let g:ColorColumn = 80
+
+  " use light gray for column width
+  highlight ColorColumn term=reverse ctermbg=242 guibg=Grey40
+
+  function! s:ToggleColorColumn()
+    if &colorcolumn == 0
+      let &colorcolumn = g:ColorColumn
+    else
+      let &colorcolumn = 0
+    endif
+  endfunction
+
+  nmap <silent> <leader>w :call <SID>ToggleColorColumn()<cr>
+endif
 
