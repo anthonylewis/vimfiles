@@ -35,6 +35,7 @@ set hlsearch
 set incsearch
 
 set wildmenu
+set wildignore+=.git,doc,ext,lib/pentaho/*,tmp
 
 set background=dark
 colorscheme desert
@@ -96,6 +97,7 @@ endif
 " map <silent> <F5> :CommandTBuffer<CR>
 
 nmap <silent> <leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>f :NERDTreeFind<CR>
 nmap <silent> <leader>c :TagbarToggle<CR>
 nmap <silent> <leader>t :CommandT<CR>
 nmap <silent> <leader>b :CommandTBuffer<CR>
