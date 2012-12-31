@@ -40,6 +40,8 @@ set wildignore+=.git,doc,ext,lib/pentaho/*,tmp
 set background=dark
 colorscheme desert
 
+let g:molokai_original=1
+
 " Kill the pink on popup menus
 highlight Pmenu ctermbg=238 gui=bold
 highlight Pmenu gui=bold guibg=#CECECE guifg=#444444
@@ -79,6 +81,7 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-n>"
 set complete=.,t
 
 " rails.vim options
+let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 let g:rails_ctags_arguments='--exclude=public --exclude=log --exclude=.git --exclude=tmp --exclude=vendor'
 
 " GUI options
