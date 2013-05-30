@@ -38,7 +38,7 @@ set wildmenu
 set wildignore+=.git,doc,ext,lib/pentaho/*,tmp
 
 set background=dark
-colorscheme desert
+colorscheme jellybeans
 
 let g:molokai_original=1
 
@@ -54,8 +54,6 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Plugin options
-let g:CSApprox_verbose_level=0
-
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowReverse=1
 
