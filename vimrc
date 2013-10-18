@@ -98,10 +98,10 @@ endif
 " map <silent> <F5> :CommandTBuffer<CR>
 
 nmap <silent> <leader>n :NERDTreeToggle<CR>
-nmap <silent> <leader>f :NERDTreeFind<CR>
 nmap <silent> <leader>c :TagbarToggle<CR>
 nmap <silent> <leader>t :CommandT<CR>
 nmap <silent> <leader>b :CommandTBuffer<CR>
+nmap <silent> <leader>f :CommandTFlush<CR>
 
 " close the quickfix window
 nmap <silent> <leader>q :ccl<CR>
