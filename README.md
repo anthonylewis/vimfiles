@@ -20,6 +20,6 @@ $ make
 Finally, link your .vimrc:
 
 ```
-cd
-ln -s .vim/vimrc .vimrc
+$ cd
+$ ln -s .vim/vimrc .vimrc
 ```
