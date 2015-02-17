@@ -92,11 +92,6 @@ if has("gui_running")
 endif
 
 " Mappings
-" map <silent> <F2> :NERDTreeToggle<CR>
-" map <silent> <F3> :TagbarToggle<CR>
-" map <silent> <F4> :CommandT<CR>
-" map <silent> <F5> :CommandTBuffer<CR>
-
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 nmap <silent> <leader>c :TagbarToggle<CR>
 nmap <silent> <leader>t :CommandT<CR>
@@ -138,4 +133,3 @@ if exists("&colorcolumn")
 
   nmap <silent> <leader>w :call <SID>ToggleColorColumn()<cr>
 endif
-
