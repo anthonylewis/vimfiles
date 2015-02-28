@@ -41,6 +41,7 @@ set background=dark
 colorscheme jellybeans
 
 let g:molokai_original=1
+let g:moria_style='white'
 
 " Kill the pink on popup menus
 highlight Pmenu ctermbg=238 gui=bold
@@ -56,6 +57,9 @@ vnoremap > >gv
 " Plugin options
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowReverse=1
+
+" .md is a markdown file
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Supertab setup - context with omnicomplete - too slow in our app.
 " let g:SuperTabDefaultCompletionType = "context"
