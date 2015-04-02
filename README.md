@@ -17,9 +17,10 @@ $ ruby extconf.rb
 $ make
 ```
 
-Finally, link your .vimrc:
+Finally, create your tmp directory and link your .vimrc:
 
 ```
 $ cd
+$ mkdir .vim/tmp
 $ ln -s .vim/vimrc .vimrc
 ```
