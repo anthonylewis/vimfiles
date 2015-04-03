@@ -102,6 +102,9 @@ nmap <silent> <leader>t :CommandT<CR>
 nmap <silent> <leader>b :CommandTBuffer<CR>
 nmap <silent> <leader>f :CommandTFlush<CR>
 
+" open spec file for current file
+nmap <silent> <leader>v :AV<CR>
+
 " close the quickfix window
 nmap <silent> <leader>q :ccl<CR>
 
