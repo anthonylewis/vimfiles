@@ -109,7 +109,7 @@ nmap <silent> <leader>q :ccl<CR>
 nmap <silent> <leader>h :nohls<CR>
 
 " toggle current line highlight
-nmap <silent> <leader>l :set cursorline!<CR>
+nmap <silent> <leader>x :set cursorline!<CR>
 
 " delete buffers
 nmap <silent> <leader>d :bd<CR>
@@ -118,7 +118,14 @@ nmap <silent> <leader>D :bufdo bd<CR>
 " ruby runner
 let g:RubyRunner_open_below = 1
 let g:RubyRunner_window_size = 10
-nmap <silent> <leader>r :RunRuby<CR> <C-w>p
+nmap <silent> <leader>g :RunRuby<CR> <C-w>p
+
+" RSpec.vim
+let g:rspec_runner = "os_x_iterm"
+nmap <leader>r :call RunCurrentSpecFile()<CR>
+nmap <leader>s :call RunNearestSpec()<CR>
+nmap <leader>l :call RunLastSpec()<CR>
+nmap <leader>a :call RunAllSpecs()<CR>
 
 " colorcolumn is Vim 7.3 only
 if exists("&colorcolumn")
