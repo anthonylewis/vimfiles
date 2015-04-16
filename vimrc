@@ -103,7 +103,7 @@ nmap <silent> <leader>b :CommandTBuffer<CR>
 nmap <silent> <leader>f :CommandTFlush<CR>
 
 " open spec file for current file
-nmap <silent> <leader>v :AV<CR>
+nmap <silent> <leader>v :A<CR>
 
 " goto file under cursor
 nmap <silent> <leader>e gf<CR>
