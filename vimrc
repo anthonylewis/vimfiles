@@ -103,7 +103,7 @@ nmap <silent> <leader>b :CommandTBuffer<CR>
 nmap <silent> <leader>f :CommandTFlush<CR>
 
 " open spec file for current file
-nmap <silent> <leader>v :A<CR>
+nmap <silent> <leader>a :A<CR>
 
 " goto file under cursor
 nmap <silent> <leader>e gf<CR>
@@ -131,7 +131,7 @@ let g:rspec_runner = "os_x_iterm"
 nmap <leader>r :call RunCurrentSpecFile()<CR>
 nmap <leader>s :call RunNearestSpec()<CR>
 nmap <leader>l :call RunLastSpec()<CR>
-nmap <leader>a :call RunAllSpecs()<CR>
+" nmap <leader>a :call RunAllSpecs()<CR>
 
 " colorcolumn is Vim 7.3 only
 if exists("&colorcolumn")
