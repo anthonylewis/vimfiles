@@ -97,10 +97,14 @@ endif
 
 " Mappings
 nmap <silent> <leader>n :NERDTreeToggle<CR>
-nmap <silent> <leader>c :TagbarToggle<CR>
+nmap <silent> <leader>v :TagbarToggle<CR>
 nmap <silent> <leader>t :CommandT<CR>
 nmap <silent> <leader>b :CommandTBuffer<CR>
 nmap <silent> <leader>f :CommandTFlush<CR>
+
+" Commentary
+nmap <silent> <leader>c gcc
+vmap <silent> <leader>c gc
 
 " open spec file for current file
 nmap <silent> <leader>a :A<CR>
