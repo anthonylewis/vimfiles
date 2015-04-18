@@ -23,3 +23,15 @@ Finally, link your .vimrc:
 $ cd
 $ ln -s .vim/vimrc .vimrc
 ```
+
+# Frequently Used Shortcuts
+
+This is basically how I edit everything...
+
+## Buffers
+
+`]+b` Next buffer
+`[+b` Previous buffer
+`\b`  CommandTBuffer
+`\d`  Delete (close) buffer
+`\D`  Delete (close) all other buffers
