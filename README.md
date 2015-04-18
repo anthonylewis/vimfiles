@@ -30,8 +30,10 @@ This is basically how I edit everything...
 
 ## Buffers
 
-`]+b` Next buffer
-`[+b` Previous buffer
-`\b`  CommandTBuffer
-`\d`  Delete (close) buffer
-`\D`  Delete (close) all other buffers
+```
+]+b Next buffer
+[+b Previous buffer
+\b  Search open buffers with CommandT
+\d  Delete (close) buffer
+\D  Delete (close) all buffers
+```
