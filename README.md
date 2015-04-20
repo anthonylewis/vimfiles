@@ -28,6 +28,15 @@ $ ln -s .vim/vimrc .vimrc
 
 This is basically how I edit everything...
 
+## Opening Files
+
+```
+\t  CommandT for finding files
+\n  NERDTree for exploring
+\a  Open the spec for the current file (vim-rails)
+\e  Open the file for the name under the cursor (vim-rails)
+```
+
 ## Buffers
 
 ```
