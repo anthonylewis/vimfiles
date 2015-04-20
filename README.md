@@ -46,3 +46,11 @@ This is basically how I edit everything...
 \d  Delete (close) buffer
 \D  Delete (close) all buffers
 ```
+
+# CommandT
+
+```
+\t  Search files
+\b  Search bufferes
+\f  Refresh known files
+```
