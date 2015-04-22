@@ -37,6 +37,16 @@ This is basically how I edit everything...
 \e  Open the file for the name under the cursor (vim-rails)
 ```
 
+## Ctags
+
+First, install ctags on Mac with `brew install ctags`. Then open your Rails app and generate tags with `:Rtags`.
+
+```
+Ctrl+] Jump to the name under the cursor
+Ctrl+o Jump back
+:tags  Show the tag stack
+```
+
 ## Buffers
 
 ```
