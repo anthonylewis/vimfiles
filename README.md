@@ -43,7 +43,7 @@ First, install ctags on Mac with `brew install ctags`. Then open your Rails app 
 
 ```
 Ctrl+] Jump to the name under the cursor
-Ctrl+o Jump back
+Ctrl+t Jump back
 :tags  Show the tag stack
 ```
 
@@ -63,4 +63,19 @@ Ctrl+o Jump back
 \t  Search files
 \b  Search bufferes
 \f  Refresh known files
+```
+
+# Comments
+
+```
+\c  Comment the current line or visual selection
+```
+
+# Indent
+
+```
+>>  Indent current line
+>   Indent visual selection
+<<  Outdent current line
+<   Outdent visual selection
 ```
