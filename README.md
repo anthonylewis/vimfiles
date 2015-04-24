@@ -52,6 +52,8 @@ Ctrl+t Jump back
 ```
 ]+b Next buffer
 [+b Previous buffer
+]+B Last Buffer
+[+B First Buffer
 \b  Search open buffers with CommandT
 \d  Delete (close) buffer
 \D  Delete (close) all buffers
