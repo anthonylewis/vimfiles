@@ -49,6 +49,8 @@ Ctrl+t Jump back
 
 ## Buffers
 
+I use buffers instead of tabs. I usually work on my laptop so I don't even have shortcuts for opening splits. If needed, I just use `:split` or `:vsplit`.
+
 ```
 ]+b Next buffer
 [+b Previous buffer
@@ -59,21 +61,21 @@ Ctrl+t Jump back
 \D  Delete (close) all buffers
 ```
 
-# CommandT
+## CommandT
 
 ```
 \t  Search files
-\b  Search bufferes
+\b  Search buffers
 \f  Refresh known files
 ```
 
-# Comments
+## Comments
 
 ```
 \c  Comment the current line or visual selection
 ```
 
-# Indent
+## Indent
 
 ```
 >>  Indent current line
