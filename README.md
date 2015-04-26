@@ -83,3 +83,7 @@ I use buffers instead of tabs. I usually work on my laptop so I don't even have 
 <<  Outdent current line
 <   Outdent visual selection
 ```
+
+## Tab Completion
+
+Supertab is setup for tab completion of Ruby files. Supertab uses the current buffer and data from ctags for completion.
