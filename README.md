@@ -87,3 +87,12 @@ I use buffers instead of tabs. I usually work on my laptop so I don't even have 
 ## Tab Completion
 
 Supertab is setup for tab completion of Ruby files. Supertab uses the current buffer and data from ctags for completion.
+
+## Color Line & Column
+
+Does anyone still care about 80-character lines? If so, these are for you...
+
+```
+\x  Highlight the current line
+\w  Highlight the 80-character column
+```
