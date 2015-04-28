@@ -97,7 +97,6 @@ endif
 
 " Mappings
 nmap <silent> <leader>n :NERDTreeToggle<CR>
-nmap <silent> <leader>v :TagbarToggle<CR>
 nmap <silent> <leader>t :CommandT<CR>
 nmap <silent> <leader>b :CommandTBuffer<CR>
 nmap <silent> <leader>f :CommandTFlush<CR>
