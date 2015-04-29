@@ -96,3 +96,11 @@ Does anyone still care about 80-character lines? If so, these are for you...
 \x  Highlight the current line
 \w  Highlight the 80-character column
 ```
+
+## RSpec
+
+```
+\r  Run the current spec file
+\s  Run the nearest spec
+\l  Run the last spec
+```
