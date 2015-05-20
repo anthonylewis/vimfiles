@@ -45,6 +45,8 @@ First, install ctags on Mac with `brew install ctags`. Then open your Rails app 
 Ctrl+] Jump to the name under the cursor
 Ctrl+t Jump back
 :tags  Show the tag stack
+]+t    Next tag on stack
+[+t    Previous tag on stack
 ```
 
 ## Buffers
