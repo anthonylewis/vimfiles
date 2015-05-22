@@ -121,7 +121,8 @@ nmap <silent> <leader>h :nohls<CR>
 nmap <silent> <leader>x :set cursorline!<CR>
 
 " delete buffers
-nmap <silent> <leader>d :bd<CR>
+" nmap <silent> <leader>d :bd<CR>
+nmap <silent> <leader>d :Sayonara!<CR>
 nmap <silent> <leader>D :bufdo bd<CR>
 
 " ruby runner
