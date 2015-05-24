@@ -59,7 +59,7 @@ I use buffers instead of tabs. I usually work on my laptop so I don't even have 
 ]+B Last Buffer
 [+B First Buffer
 \b  Search open buffers with CommandT
-\d  Delete (close) buffer
+\d  Delete (close) buffer without closing the window
 \D  Delete (close) all buffers
 ```
 
