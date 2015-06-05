@@ -132,10 +132,10 @@ nmap <silent> <leader>g :RunRuby<CR> <C-w>p
 
 " RSpec.vim
 let g:rspec_runner = "os_x_iterm"
-nmap <leader>r :call RunCurrentSpecFile()<CR>
-nmap <leader>s :call RunNearestSpec()<CR>
-nmap <leader>l :call RunLastSpec()<CR>
-" nmap <leader>a :call RunAllSpecs()<CR>
+nmap <silent> <leader>r :call RunCurrentSpecFile()<CR>
+nmap <silent> <leader>s :call RunNearestSpec()<CR>
+nmap <silent> <leader>l :call RunLastSpec()<CR>
+" nmap <silent> <leader>a :call RunAllSpecs()<CR>
 
 " colorcolumn is Vim 7.3 only
 if exists("&colorcolumn")
