@@ -38,7 +38,7 @@ set wildmenu
 set wildignore+=.git,doc,ext,lib/pentaho/*,tmp
 
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme jellybeans
 
 let g:molokai_original=1
 let g:moria_style='white'
