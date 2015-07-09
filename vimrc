@@ -137,13 +137,6 @@ nmap <silent> <leader>s :call RunNearestSpec()<CR>
 nmap <silent> <leader>l :call RunLastSpec()<CR>
 " nmap <silent> <leader>a :call RunAllSpecs()<CR>
 
-" split array
-function! SplitArray()
-  s/ /\r/g
-endfunction
-
-map <silent> K :call SplitArray()<CR>
-
 " colorcolumn is Vim 7.3 only
 if exists("&colorcolumn")
   let g:ColorColumn = 80
