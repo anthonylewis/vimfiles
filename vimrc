@@ -61,6 +61,9 @@ let g:CommandTMatchWindowReverse=1
 " .md is a markdown file
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" .es6 is javascript from the future
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
 " Supertab setup - context with omnicomplete
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
