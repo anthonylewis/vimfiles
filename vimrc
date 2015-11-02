@@ -35,7 +35,7 @@ set hlsearch
 set incsearch
 
 set wildmenu
-set wildignore+=.git,doc,ext,lib/pentaho/*,tmp
+set wildignore+=.git,tmp
 
 set background=dark
 colorscheme jellybeans
