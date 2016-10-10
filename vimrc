@@ -64,6 +64,9 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 " .es6 is javascript from the future
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
+" .nghaml is basically haml...
+autocmd BufRead,BufNewFile *.nghaml set filetype=haml
+
 " Supertab setup - context with omnicomplete
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
@@ -134,7 +137,7 @@ let g:RubyRunner_window_size = 10
 nmap <silent> <leader>g :RunRuby<CR> <C-w>p
 
 " RSpec.vim
-let g:rspec_runner = "os_x_iterm"
+let g:rspec_runner = "os_x_iterm2"
 nmap <silent> <leader>r :call RunCurrentSpecFile()<CR>
 nmap <silent> <leader>s :call RunNearestSpec()<CR>
 nmap <silent> <leader>l :call RunLastSpec()<CR>
