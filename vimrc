@@ -38,10 +38,14 @@ set wildmenu
 set wildignore+=.git,tmp
 
 set background=dark
-colorscheme jellybeans
 
 let g:molokai_original=1
 let g:moria_style='white'
+
+let g:solarized_contrast='normal'
+let g:solarized_visibility='normal'
+
+colorscheme jellybeans
 
 " Kill the pink on popup menus
 highlight Pmenu ctermbg=238 gui=bold
@@ -53,6 +57,8 @@ set directory=~/.vim/tmp
 " visual shifting (does not exit Visual mode)
 vnoremap < <gv
 vnoremap > >gv
+
+set clipboard=unnamed
 
 " Plugin options
 let g:CommandTMaxHeight=20
@@ -74,6 +80,9 @@ let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 
+" make JavaScript prettier with gq
+autocmd FileType javascript set formatprg=prettier\ --single-quote\ --stdin
+
 " Ruby autocomplete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
@@ -94,6 +103,7 @@ let g:rails_ctags_arguments='--exclude=public --exclude=log --exclude=.git --exc
 
 " GUI options
 if has("gui_running")
+  colorscheme jellybeans
   set gcr=a:blinkwait0,a:block-cursor
   set gfn=Monaco:h12.00
   set guioptions-=T
